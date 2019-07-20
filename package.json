@@ -8,6 +8,9 @@
     "test-watch": "jest --watchAll",
     "start": "nodemon index.js"
   },
+  "jest": {
+    "automock": true
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",

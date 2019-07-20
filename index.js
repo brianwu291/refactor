@@ -4,7 +4,8 @@ const plays = {
   hamlet: { name: "Hamlet", type: "tragedy" },
   asLike: { name: "As You Like It", type: "comedy" },
   othello: { name:  "Othello", type: "tragedy" },
-}
+};
+exports.plays = plays;
 
 const invoice = {
   customer: "BigCo", performances:
@@ -38,3 +39,8 @@ function renderHtml(data) {
 const content = htmlStatement(invoice, plays)
 
 console.log(content)
+
+module.exports = {
+  plays,
+  invoice
+}
